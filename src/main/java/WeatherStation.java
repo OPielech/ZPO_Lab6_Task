@@ -20,7 +20,6 @@ public class WeatherStation {
         Double maxTemperature;
         Double minTemperature;
 
-
         System.out.println("Please enter the name of city");
         city = scanner.nextLine();
 
@@ -57,11 +56,11 @@ public class WeatherStation {
         maxTemperature = Double.valueOf(map1.get("temp_max").toString());
 
         System.out.println("Name of city: " + nameOfCity);
-        System.out.printf("Temperature: %.1f\n", (temperature - 273));
-        System.out.println("Pressure: " + pressure);
-        System.out.println("Humidity: " + humidity);
-        System.out.printf("Minimum temperature: %.1f\n", (minTemperature - 273));
-        System.out.printf("Maximum temperature: %.1f\n", (maxTemperature - 273));
+        System.out.printf("Temperature: %.1f [°C]\n", (temperature - 273));
+        System.out.println("Pressure: " + pressure + " [hPa]");
+        System.out.println("Humidity: " + humidity + " [%]");
+        System.out.printf("Minimum temperature: %.1f [°C]\n", (minTemperature - 273));
+        System.out.printf("Maximum temperature: %.1f [°C]\n", (maxTemperature - 273));
 
     }//end of main
 }//end of class
